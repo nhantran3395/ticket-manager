@@ -19,3 +19,13 @@ ticketManager.buy("nhan@example.com", 20);
 ticketManager.buy("jay@example.com", 10);
 ticketManager.buy("david@example.com", 30);
 ticketManager.buy("jane@example.com", 30);
+
+console.log(
+  `We have ${ticketManager.listenerCount("buy")} listener(s) for the buy event`,
+);
+
+console.log(
+  `We have ${ticketManager.listenerCount(
+    "error",
+  )} listener(s) for the error event`,
+);
